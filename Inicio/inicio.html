@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body {
+            background: #1e1d1f;
+        }
+        ul, li, p , h1, h2, h5, dt, label{
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluid">
@@ -14,49 +22,99 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#!">Inicio</a>       
+            <a class="navbar-brand" img src="../imagenes/logos/logo facebook.png" href="../Inicio/inicio.html">Inicio</a>       
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-md-0">
                 <li class="nav-item active">
-                <a class="nav-link" href="../Mensajeria/mensajeria.html">Mensajeria <span class="sr-only"></span></a>
+                <a class="nav-link" href="../Mensajeria/mensajeria.html">Mensajeria<span class="sr-only"></span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" align="right">
                 <a class="nav-link" href="../index.html">Cerrar sesión</a>
                 </li>
             </ul>
             </div>
         </nav>
     </div>
+    <div>
+        <!--Menu izquierdo-->
+    <div class="menu">
+        <dl>
+            <dt><img src="../imagenes/icons/explorar.png" width="30">   |  Explorar</dt>
+            <dt><img src="../imagenes/icons/notificaciones.png" width="30">   |  Notificaciones</dt>
+            <dt><img src="../imagenes/icons/guardado.png" width="30">   |  Guardados</dt>
+            <dt><img src="../imagenes/icons/perfil.png" width="30">   |  Perfil</dt>
+            <dt><img src="../imagenes/icons/ayuda.png" width="30">   |  Ayuda</dt>
+        </dl>
+    </div>
+          
+    </div>
     <!-- Publicar algo-->   
-    <div class="container-fluid2">
+    <div class="publicar">
         <br>
         <form>
         <div class="form-group">
                 <label for="formGroupExampleInput">¿En qué piensas?</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Escribe aqui">
+                <br>
+                <input type="text"  id="formGroupExampleInput" placeholder="Escribe aqui">
             </form>
         <div id="comentario">
         <br>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            <br>
-        <button type="button" class="btn btn-dark">Publicar</button>
+        <button type="button" style=background-color:#0d6efd class="btn btn-dark">Publicar</button>
     </div>
         <br>
-    <!--Comentarios-->
-    <div class="container-fluid3">
-        <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <strong class="mr-auto">ThePineapple</strong>
-                <small>Hace 11 minutos</small>
-                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                    <span aria-hidden="true">x</span>
-                </button>
-            </div>
-            <div class="toast-body">Hola, un gusto.</div>
-        </div>
-    </div>
-
+        <br>
     <div>
+        <!--Publicaciones hechas-->
+        <blockquote class="publicaciones">
+            <img class="d-flex mr-3" data-src="holder.js/64x64?theme=sky" alt="64x64" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2264%22%20height%3D%2264%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17fecbda213%20text%20%7B%20fill%3A%23FFFFFF%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17fecbda213%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%230D8FDB%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2213.173004150390625%22%20y%3D%2236.5%22%3E64x64%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 30px; height: 30px;">
+            <h5 class="mb-0">Hola, donde queda la biblioteca</h5>
+            <br>
+            <footer class="blockquote-footer">JoseLechuga   -   
+              <cite title="Source Title">Hace 9 minutos</cite>
+            </footer>
+          </blockquote>
+        <div>
+    </div>
+    <!--Comentarios--> 
+        <div class="comentarios">
+            <img class="d-flex mr-3" data-src="holder.js/64x64?theme=sky" alt="64x64" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2264%22%20height%3D%2264%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17fecbda213%20text%20%7B%20fill%3A%23FFFFFF%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17fecbda213%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%230D8FDB%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2213.173004150390625%22%20y%3D%2236.5%22%3E64x64%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 30px; height: 30px;">
+            <div class="media-body">
+              <p class="mt-0">Hola, en el segundo piso</p>
+              <footer class="blockquote-footer">Juan Topo   -   
+                <cite title="Source Title">Hace 7 minutos</cite>
+              </footer>
+            </div>
+          </div>
+          <div class="media">
+            <img class="d-flex mr-3" data-src="holder.js/64x64?theme=sky" alt="64x64" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2264%22%20height%3D%2264%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17fecbda213%20text%20%7B%20fill%3A%23FFFFFF%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17fecbda213%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%230D8FDB%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2213.173004150390625%22%20y%3D%2236.5%22%3E64x64%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 30px; height: 30px;">
+            <div class="media-body">
+              <p class="mt-0">piso 2</p>
+              <footer class="blockquote-footer">Anuel   -   
+                <cite title="Source Title">Hace 4 minutos</cite>
+              </footer>
+            </div>
+          </div>
+          <!--Publicacion 2-->
+          <br>
+          <blockquote class="comentarios">
+            <img class="d-flex mr-3" data-src="holder.js/64x64?theme=sky" alt="64x64" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2264%22%20height%3D%2264%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17fecbda213%20text%20%7B%20fill%3A%23FFFFFF%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17fecbda213%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%230D8FDB%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2213.173004150390625%22%20y%3D%2236.5%22%3E64x64%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 30px; height: 30px;">
+            <h5 class="mb-0">Hola me gusta Duoc</h5>
+            <br>
+            <footer class="blockquote-footer">Juanin   -   
+              <cite title="Source Title">Hace 18 minutos</cite>
+            </footer>
+          </blockquote>
+          <div class="media">
+            <img class="d-flex mr-3" data-src="holder.js/64x64?theme=sky" alt="64x64" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2264%22%20height%3D%2264%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17fecbda213%20text%20%7B%20fill%3A%23FFFFFF%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17fecbda213%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%230D8FDB%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2213.173004150390625%22%20y%3D%2236.5%22%3E64x64%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 30px; height: 30px;">
+            <div class="media-body">
+              <p class="mt-0">a bueno</p>
+              <footer class="blockquote-footer">Diego   -   
+                <cite title="Source Title">Hace 1 minuto</cite>
+              </footer>
+            </div>
+          </div>
+        <div>
+    </div>
         <!--Nav inferior-->
         <br>
         <ul class="nav nav-pills nav-fill">
@@ -70,8 +128,7 @@
                 <a class="nav-link" href="../index.html">Cerrar sesión</a>
             </li>
           </ul>
-          
-    </div>
+        </div>
 
             
 
