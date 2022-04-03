@@ -1,37 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red-Social</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/style.css" rel="style.css">
+    <style>
+        body {
+            background: #1e1d1f;
+        }
+
+        .bg {
+            background-image: url();
+            background-position: center center;
+        }
+    </style>
 </head>
 <body>
+    <div id="carouselExampleControls" class="carousel slide d-block w-100" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/baner/baner1.jpg" class="w-100" height="320" width="420"alt="baner1">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/baner/baner2.jpg" class="w-100" height="320" width="420" alt="baner2">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/baner/baner3.jpg" class="w-100" height="320" width="420" alt="baner3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col">
         
+
+            <div class="col bg">
             </div>
             <div class="col">
                 <div class="text-end">
-                    <img src="imagenes/logo naruto.png" width="54" alt="Icono momentaneo">
+                    <img src="imagenes/logos/logo naruto.png" width="54" alt="Icono momentaneo">
                 </div>
-                <h2 class="fw-bold text-center py-5">Bienvenido a Vive Duoc</h2> -->
+                <h2 class="fw-bold text-center py-5" style="color: aliceblue;">Bienvenido a Vive Duoc</h2> -->
 
+                <div class="jumbotron" style="color: aliceblue">
+                    <h3 class="display-3 text-xl-left">Hola,Bienvenidos!</h3>
+                    <p class="lead text-left">Esta es nuestra red social queremos que tengas una experiencia muy genial y 
+                        que puedas disfrutar comunicandote con tus profesores como tambien conociendo gente de tu sede.</p>
+                    <hr class="my-2">
+                    <p>Disfruten de todas las herramientas que les daremos para que puedan compartir con mucha gente nueva 
+                        Pasenlo macanuo.</p>
+                </div>
                 <!-- Login -->
                 <form action="#">
                     <div class="mb-4">
-                        <label for="email" class="form-label">Correo Electronico</label>
+                        <label for="email" class="form-label" style="color: aliceblue" ;>Correo Electronico</label>
                         <input type="email" class="form-control" name="email"></imput>
                     </div>
                     <div class="mb-4">
-                        <label for="password" class="form-label">Password</label>
+                        <label for="password" class="form-label" style="color: aliceblue">Password</label>
                         <input type="password" class="form-control" name="password"></imput>
                     </div>
                     <div class="mb-4 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label form="connected" class="form-check-label">Mantenerme conectado</label>
+                        <label form="connected" class="form-check-label" style="color: aliceblue">Mantenerme
+                            conectado</label>
                     </div>
 
                     <div class="d-grid">
@@ -39,7 +86,7 @@
                     </div>
 
                     <div class="my-3">
-                        <span>No Tienes Cuenta?<a href="#">Registrate</a></span> <br>
+                        <span style="color: aliceblue">No Tienes Cuenta?<a href="#">Registrate</a></span> <br>
                         <span><a href="#">Recuperar Password</a></span>
 
                     </div>
@@ -48,14 +95,14 @@
                 <!-- Login con redes sociales -->
                 <div class="container w-100 my-5">
                     <div class="row text-center">
-                        <div class="col-12">Iniciar Sesión</div>
+                        <div class="col-12" style="color: aliceblue">Iniciar Sesión</div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <button class="btn btn-outline-primary w-100 my-1">
                                 <div class="row align-items-center">
                                     <div class="col-2">
-                                        <img src="imagenes/logo facebook.png" width="32" alt="facebook logo">
+                                        <img src="imagenes/logos/logo facebook.png" width="32" alt="facebook logo">
                                     </div>
 
                                     <div class="col-10 text-center">
@@ -68,7 +115,7 @@
                             <button class="btn btn-outline-danger w-100 my-1">
                                 <div class="row align-items-center">
                                     <div class="col-2">
-                                        <img src="imagenes/google logo.png" width="32" alt="facebook logo">
+                                        <img src="imagenes/logos/google logo.png" width="32" alt="Google logo">
                                     </div>
 
                                     <div class="col-10 text-center">
@@ -79,16 +126,23 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
             </div>
 
 
 
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
