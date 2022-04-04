@@ -1,0 +1,46 @@
+body {
+
+    /* Ubicación de la imagen */
+    
+    background-image: url(../imagenes/Fondos/dragon2.jpg);
+    
+    /* Para dejar la imagen de fondo centrada, vertical y
+    
+    horizontalmente */
+    
+    background-position: center center;
+    
+    /* Para que la imagen de fondo no se repita */
+    
+    background-repeat: no-repeat;
+    
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    
+    background-attachment: fixed;
+    
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    
+    background-size: cover;
+    
+    /* Se muestra un color de fondo mientras se está cargando la imagen
+    
+    de fondo o si hay problemas para cargarla */
+    
+    background-color: #000000;
+    
+}
+.cuadrado{
+padding:5px;
+margin:5px;
+background-color: rgba(189, 4, 4, 0.384);
+border: solid 1px #0f0f0f;
+color: white;
+}
+
+.bg{
+    background: linear-gradient(to right, rgba(4, 167, 31, 0.199) ,rgba(96, 2, 133, 0.151));
+}
+
+.bg1{
+    color: #000000;
+}
