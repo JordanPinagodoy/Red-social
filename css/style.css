@@ -6,8 +6,7 @@
 }
 
 .text-2xl{
-    font-family: 'Rubik Moonrocks', cursive;
-    /*tipo de fuente para el texto*/
+    font-family: 'Secular One', sans-serif;    /*tipo de fuente para el texto*/
 }
 
 .letra{
@@ -43,19 +42,75 @@ a{
 
 .name{ font-weight: 900; }
 
-.fo{
-    background-color: #780606;
+.letrawe{
+    font-family: 'Secular One', sans-serif;
+    color: white;
+    position:relative;
+    width: 95%;
 }
 
+.supchat{
+    border: solid 1px #0d6efd;
+}
 
+.mueve{
+    position: relative;
+    width:10% ;
+}
 
+hr{
+    color: aliceblue;
+}
 
+.booody{
 
-/*Fin css Jose*/
+    /* Ubicación de la imagen */
+    
+    background-image: url(../ayuda/drake-12.jpg);
+    
+    /* Para dejar la imagen de fondo centrada, vertical y
+    
+    horizontalmente */
+    
+    background-position: center center;
+    
+    /* Para que la imagen de fondo no se repita */
+    
+    background-repeat: no-repeat;
+    
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    
+    background-attachment: fixed;
+    
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    
+    background-size: cover;
+    
+    /* Se muestra un color de fondo mientras se está cargando la imagen
+    
+    de fondo o si hay problemas para cargarla */
+    
+    background-color: #000000;
+    
+}
 
+.wewe{
+    background: linear-gradient(to right, rgba(110, 4, 167, 0.199) ,rgba(96, 2, 133, 0.151));
+    position: relative;
+}
 
-/*CSS MATI*/
-/*FIN CSS MATI*/
+.titulo-1{
+    color: antiquewhite;
+    position: relative;
+    top: 20%;
+}
 
-/*CSS JORDAN*/
-/*FIN CSS JORDAN*/
+.letra-2{
+    border: solid 1px black;
+}
+
+.enviado{
+    position: relative;
+    left: 92%;
+    width: 120px;
+}
