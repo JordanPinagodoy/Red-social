@@ -1,1 +1,14 @@
 
+ul, li, p , h1, h2, h5, label{
+    color: red;
+}
+dt{
+    color:white
+}
+body {
+
+
+    
+    background-color: #1e1d1f;
+    
+}
