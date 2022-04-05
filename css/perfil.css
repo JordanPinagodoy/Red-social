@@ -1,3 +1,9 @@
 body { 
     background-color: #1e1d1f;  
 }
+p,h1,h2,cite,dl,dt,h5,footer{
+    color: aliceblue;
+}
+.circular--square {
+    border-radius: 50%;
+  }
