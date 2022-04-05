@@ -1,3 +1,61 @@
-body{
-    font-family: 'Rubik Moonrocks', cursive;
+/*Marquen sus partes del css*/
+
+/*Jose*/
+.fondo{
+    background-color: #1e1d1f ;
 }
+
+.text-2xl{
+    font-family: 'Rubik Moonrocks', cursive;
+    /*tipo de fuente para el texto*/
+}
+
+.letra{
+    border:solid 1px #780606; 
+    color: #1e1d1f;
+}
+
+.barra-superior{
+    background-color: #1e1d1f;
+    height:70px;
+    width: 95%;
+}
+
+.barra{
+    border:solid 1px black ;
+}
+
+a{
+    color: azure;
+}
+
+.inicio{
+    position: relative;
+    left:10px;
+    top: 10px;
+}
+
+.close{
+    position: relative;
+    left: 92%;
+    bottom: 10%;
+}
+
+.name{ font-weight: 900; }
+
+.fo{
+    background-color: #780606;
+}
+
+
+
+
+
+/*Fin css Jose*/
+
+
+/*CSS MATI*/
+/*FIN CSS MATI*/
+
+/*CSS JORDAN*/
+/*FIN CSS JORDAN*/
