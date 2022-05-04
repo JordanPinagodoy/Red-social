@@ -44,3 +44,14 @@ color: white;
 .bg1{
     color: #000000;
 }
+
+button{
+    background-color: black;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+}
+/*popup version 1*/
+#modal::backdrop {
+    background-color: rgba(0, 0, 0,.55);
+}
