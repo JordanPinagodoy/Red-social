@@ -1,0 +1,157 @@
+body{
+    background-image: url(../img/ds.jpg);
+}
+/*Contenedor de opciones con imagen negra de fondo*/
+.contenedor{
+    position: relative;
+    height: 85vh;
+    margin: 2%;
+    background-image: url(../img/negro_opaco.png);
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+
+/*Fondo de pestaña formulario*/
+.fondo{
+    background-image: url(../img/bk_carru.png);
+}
+
+.contorno{
+    border: 2px solid brown;
+    border-radius: 15px;
+}
+
+/*Fuente de letras formulario*/
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+.letraform{
+    font-family: 'Orelega One', cursive;
+    font-size: 30px;
+    color: aliceblue;
+    -webkit-text-stroke: 2px black;
+}
+
+
+/*Animacion de input*/
+.input {
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 20px;
+    background-color: rgb(77, 75, 75);
+    cursor: pointer;
+    padding: 7px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+    max-width: 15em;
+}
+
+h3{
+    font-family: 'Orelega One', cursive;
+    font-size: 30px;
+    color: aliceblue;
+
+}
+
+.cajacomentario{
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 20px;
+    background-color: rgb(77, 75, 75);
+    cursor: pointer;
+    padding: 7px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+}
+
+/*ANIMACION BOTON*/
+
+/*
+.botonenvio {
+    --color: #6d0505eb;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   .botonenvio:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .botonenvio:hover {
+    color: #fff;
+   }
+   
+   .botonenvio:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .botonenvio:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .botonenvio:active:before {
+    background: #6d0505eb;
+    transition: background 0s;
+   }
+
+*/
+
+.botonenvio {
+    background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+    background-size: 800% 400%;
+    padding: 1em 2em;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+   }
+   
+   .botonenvio:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+   }
+   
+   .botonenvio:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+   }
+   
+   @keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+   
+    50% {
+     background-position: 100% 50%;
+    }
+   
+    100% {
+     background-position: 0% 50%;
+    }
+   }
