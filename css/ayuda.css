@@ -1,12 +1,12 @@
 body{
-    background-image: url(../img/ds.jpg);
+    background-image: url(../imagenes/Fondos/ds.jpg);
 }
 /*Contenedor de opciones con imagen negra de fondo*/
 .contenedor{
     position: relative;
     height: 85vh;
     margin: 2%;
-    background-image: url(../img/negro_opaco.png);
+    background-image: url(../imagenes/negro_opaco.png);
     display: flex;
     justify-content: center;
     border-radius: 15px;
@@ -15,7 +15,7 @@ body{
 
 /*Fondo de pestaña formulario*/
 .fondo{
-    background-image: url(../img/bk_carru.png);
+    background-image: url(../imagenes/bk_carru.png);
 }
 
 .contorno{
