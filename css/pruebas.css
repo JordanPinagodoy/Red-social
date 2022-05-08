@@ -52,10 +52,12 @@ h4{
 h5{
     position: absolute;
     color: #fff;
-    top: 55%;
+    top: 50%;
     right: 15%;
     left: 10%;
 }
+
+
 
 button {
     --color: #ad0b21;
@@ -111,15 +113,7 @@ button {
     height: 100vh;
 }
 
-#reset{
-    position: absolute;
-    right: 20%;
-}
 
-#enviar{
-    position: absolute;
-    right:70%;
-}
 
 /*Fuente de letras formulario*/
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
