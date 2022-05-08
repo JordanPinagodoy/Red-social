@@ -6,7 +6,7 @@ body{
     position: relative;
     height: 85vh;
     margin: 2%;
-    background-image: url(../imagenes/negro_opaco.png);
+    background-image: url(../imagenes/Fondos/negro_opaco.png);
     display: flex;
     justify-content: center;
     border-radius: 15px;
@@ -14,8 +14,9 @@ body{
 
 
 /*Fondo de pestaña formulario*/
+/**/
 .fondo{
-    background-image: url(../imagenes/bk_carru.png);
+    background-image: url(../imagenes/Fondos/bk_carru.png);
 }
 
 .contorno{

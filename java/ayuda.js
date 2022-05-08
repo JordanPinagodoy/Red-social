@@ -122,3 +122,8 @@ $(document).ready(function() {
 
     });
     });
+
+    $("#contenedor2").hide();
+    $("#mostrar").click(function(){
+
+    });
