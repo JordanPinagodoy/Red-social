@@ -1,6 +1,7 @@
 
 ul, li, p , h1, h2, h5, label{
     color: red;
+    font-family: 'Koulen', cursive;
 }
 dt{
     color:white
