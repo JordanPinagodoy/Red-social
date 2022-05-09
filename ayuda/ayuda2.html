@@ -13,6 +13,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+  <link rel="icon" href="../imagenes/logos/LOGO1_2.png">
+  <title>Ayuda</title>
 </head>
 
 <body>
@@ -30,13 +32,14 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              Más opciones
             </a>
             <!--RELLENAR CON BOTONES EXTRAS -->
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="../Inicio/inicio.html">Inicio</a></li>
+              <li><a class="dropdown-item" href="../Mensajeria/chat.html">Chat</a></li>
+              <li><a class="dropdown-item" href="../ayuda/ayuda2.html">Ayuda</a></li>
+              <li><a class="dropdown-item" href="../index.html">Cerrar sesión</a></li>
             </ul>
           </li>
         </ul>
@@ -48,9 +51,8 @@
 
 
   <div class="contenedor">
-   
+
   <div id="cuadrofiltro" class="filtro">
-      
       <div>
         <button id="mostrar">Mostrar formulario</button>
       </div>
@@ -72,6 +74,7 @@
   <div id="contenedor2" class="contenedor2">
     <div class="accordion-body fondo">
       <div class="contorno">
+
         <div class="container container-fluid p-3 relleno">
           <!--FORMULARIO-->
           <div class="container container-fluid p-4">
@@ -84,7 +87,7 @@
                   </label>
                 </div>
                 <div class="mb-3">
-                  <input id="nombre" type="text" class="input nombre" placeholder="Ingresa tu nombre y apellido">
+                  <input id="nombre" type="text" class="form-control input nombre" placeholder="Ingresa tu nombre y apellido">
                   <span class="nom_correcto">✔</span>
                 </div>
                 <!--ETIQUETAS DE ERRORES NOMBRE-->
@@ -101,7 +104,7 @@
                   </label>
                 </div>
                 <div>
-                  <input id="email" type="email" class="input" placeholder="Ingresa tu Correo ">
+                  <input id="email" type="email" class="form-control input" placeholder="Ingresa tu Correo ">
                   <span id="success" style="display:none;color:green;">Correo válido ✔</span>
                 </div>
                 <!--ETIQUETAS DE ERRORES CORREO-->
@@ -121,20 +124,85 @@
                   <span class="err_com" id="errorcomentario">( Debe contener 30 caracteres minimo.)</span>
                 </div>
                 <div>
-                  <textarea class="cajacomentario" name="comentario" id="comentario" cols="70" rows="10"
+                  <textarea class="form-control cajacomentario" name="comentario" id="comentario" cols="70" rows="10"
                     placeholder="Debe contener un minimo de 30 caracteres su comentario."></textarea>
                 </div>
 
-                <div>
+                <div class="p-4">
                   <button type="submit" class="btn btn-light botonenvio" id="enviar">Enviar</button>
+                  <button type="reset" class="btn btn-light limpiarformulario" id="enviar">Limpiar formulario</button>
                 </div>
               </div>
             </form>
-          </div>
 
-        </div>
+          <div class="container container-fluid p-3 relleno">
+              <!--FORMULARIO-->
+              <div class="container container-fluid p-4">
+                  <form action="">
+                      <!--NOMBRE-->
+                      <div class="container">
+                          <div class="mb-3">
+                              <label for="nombre">
+                                  <p class="form-label letraform">Nombre</p>
+                              </label>
+                          </div>
+                          <div class="mb-3">
+                              <input id="nombre" type="text" class="form-control input nombre"
+                                  placeholder="Ingresa tu nombre y apellido">
+                              <span class="nom_correcto">✔</span>
+                          </div>
+                          <!--ETIQUETAS DE ERRORES NOMBRE-->
+                          <span class="sn_nomap" id="err1"> (*) Este campo es obligatorio</span>
+                          <span class="error_nombre">Debe ingresar nombre y apellido</span>
+                          <br>
+                      </div>
+
+                      <!--CORREO-->
+                      <div class="container">
+                          <div>
+                              <label for="email">
+                                  <p class="letraform">Correo Electronico</p>
+                              </label>
+                          </div>
+                          <div>
+                              <input id="email" type="email" class="form-control input"
+                                  placeholder="Ingresa tu Correo ">
+                              <span id="success" style="display:none;color:green;">Correo válido ✔</span>
+                          </div>
+                          <!--ETIQUETAS DE ERRORES CORREO-->
+                          <span id="error" style="display:none;color:red;">Correo no válido</span>
+                          <span class="sn_correo" style="display:none;color:red;">Debe introducir su correo
+                              electrónico.</span>
+                      </div>
+
+                      <!--COMENTARIO-->
+                      <div class="p-3">
+                          <div>
+                              <label for="comentario" class="etiquetacom">
+                                  <p class="letraform">COMENTARIO</p>
+                              </label>
+                          </div>
+                          <div>
+                              <span class="err_com" id="errorcomentario">( Debe contener 30 caracteres minimo.)</span>
+                          </div>
+                          <div>
+                              <textarea class="form-control cajacomentario" name="comentario" id="comentario"
+                                  cols="70" rows="10"
+                                  placeholder="Debe contener un minimo de 30 caracteres su comentario."></textarea>
+                          </div>
+
+                          <div class="p-3">
+                              <button type="submit" class="btn btn-light p-2 mb-3 botonenvio" id="enviar">Enviar</button>
+                              <button type="reset" class="btn btn-light p-2 mb-3 botonreset" id="reset">Limpiar formulario</button>
+                          </div>
+
+                          
+                      </div>
+                  </form>
+              </div>
+          </div>
       </div>
-    </div>
+  </div>
   </div>
 
 

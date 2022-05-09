@@ -66,6 +66,7 @@ $(document).ready(function() {
             $("#email").css({ background: "#fe8c8c" });
             $(".sn_correo").show();
             $("#error").hide();
+            $("#success").hide();
         }
 
         $('#email').on('keyup', function() {
@@ -109,6 +110,7 @@ $(document).ready(function() {
             $("#email").css({ background: "#fe8c8c" });
             $(".sn_correo").show();
             $("#error").hide();
+            $("#success").hide();
             return false
         }
 
