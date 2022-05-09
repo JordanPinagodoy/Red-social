@@ -28,8 +28,16 @@ h2{
     left: 20%;
 }
 
+.container{
+    border: 1px solid blue;
+    border-radius: 5px;
+}
 
+button{
+    width: 300px;
+    border-radius: 1px solid red;
 
+}
 
 
 
