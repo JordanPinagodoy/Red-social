@@ -84,7 +84,7 @@
                   </label>
                 </div>
                 <div class="mb-3">
-                  <input id="nombre" type="text" class="input nombre" placeholder="Ingresa tu nombre y apellido">
+                  <input id="nombre" type="text" class="form-control input nombre" placeholder="Ingresa tu nombre y apellido">
                   <span class="nom_correcto">✔</span>
                 </div>
                 <!--ETIQUETAS DE ERRORES NOMBRE-->
@@ -101,7 +101,7 @@
                   </label>
                 </div>
                 <div>
-                  <input id="email" type="email" class="input" placeholder="Ingresa tu Correo ">
+                  <input id="email" type="email" class="form-control input" placeholder="Ingresa tu Correo ">
                   <span id="success" style="display:none;color:green;">Correo válido ✔</span>
                 </div>
                 <!--ETIQUETAS DE ERRORES CORREO-->
@@ -121,12 +121,13 @@
                   <span class="err_com" id="errorcomentario">( Debe contener 30 caracteres minimo.)</span>
                 </div>
                 <div>
-                  <textarea class="cajacomentario" name="comentario" id="comentario" cols="70" rows="10"
+                  <textarea class="form-control cajacomentario" name="comentario" id="comentario" cols="70" rows="10"
                     placeholder="Debe contener un minimo de 30 caracteres su comentario."></textarea>
                 </div>
 
-                <div>
+                <div class="p-4">
                   <button type="submit" class="btn btn-light botonenvio" id="enviar">Enviar</button>
+                  <button type="reset" class="btn btn-light limpiarformulario" id="enviar">Limpiar formulario</button>
                 </div>
               </div>
             </form>
