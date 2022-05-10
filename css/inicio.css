@@ -13,10 +13,6 @@ body {
     box-sizing: border-box;
     margin: 0;
 }
-/* Perfil*/
-.circular--square {
-    border-radius: 50%;
-  }
 .secciones{
     height: auto;
     width: 100%;
@@ -85,14 +81,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.archivo{
-    height: auto;
 
-}
-.botom{
-    height: auto;
-
-}
 @media(max-width:1050px){
     .archivo, .botom{
         width: 10%,92%;
