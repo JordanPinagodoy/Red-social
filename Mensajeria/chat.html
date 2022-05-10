@@ -13,12 +13,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/chatintento2.css">
   <link rel="icon" href="../imagenes/logos/LOGO1_2.png">
   <title>Chat</title>
 </head>
 
-<body class="fondo">
+<body>
 
   <!--MENU DE SELECCIONES-->
   
@@ -54,12 +54,12 @@
   <!--Area de mensajes-->
 
   <section class="h-screen flex overflow-hidden">
-    <div class="bg-primary w-3/12 p-6">
+    <div id="cuadroizquierdachats" class=" w-3/12 p-6">
 
       <h3 class="text-2xl mb-8">Chat en linea</h3>
 
       <!--seccion de chat-->
-      <div class="flex overflow-auto w-full mb-8">
+      <div id="cuadrochatsuno" class="flex overflow-auto w-full mb-8 ">
         <!--Chat mati-->
         <div class="self-center text-center mr-4"></div>
         <div>
@@ -128,14 +128,14 @@
 
       <!--vista de chats-->
       <div class="overflow-auto h-4/5">
-        <div class="flex bg-gray-100 round p-4 mb-4">
+        <div id="bordeventanachats" class="flex bg-gray-100 round p-4 mb-4">
           <img src="../imgchat/elmo.jpg" class="rounded-full w-12 mr-4" alt="">
           <div class="w-full overflow-hidden">
             <div class="flex">
-              <p class="name flex-grow">Kodwell</p>
+              <p id="textochatglobo" class="name flex-grow">Kodwell</p>
               <small class="text-gray-500 mb-1">10:50am</small>
             </div>
-            <small class="overflow-ellipsis overflow-hidden
+            <small id="textochatglobo"  class="overflow-ellipsis overflow-hidden
                         whitespace-nowrap block">Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Minus magnam laudantium nesciunt
               sunt dicta, blanditiis unde in fugit autem commodi,
@@ -144,14 +144,14 @@
             </small>
           </div>
         </div>
-        <div class="flex bg-gray-100 round p-4 mb-4">
+        <div id="bordeventanachats" class="flex bg-gray-100 round p-4 mb-4">
           <img src="../imgchat/stitch.png" class="rounded-full w-12 mr-4" alt="">
           <div class="w-full overflow-hidden">
             <div class="flex">
-              <p class="name flex-grow">Uncleplayer</p>
-              <small class="text-gray-500 mb-1">8:20am</small>
+              <p id="textochatglobo"  class="name flex-grow">Uncleplayer</p>
+              <small id="textochatglobo"  class="text-gray-500 mb-1">8:20am</small>
             </div>
-            <small class="overflow-ellipsis overflow-hidden
+            <small id="textochatglobo"  class="overflow-ellipsis overflow-hidden
                         whitespace-nowrap block">Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Minus magnam laudantium nesciunt
               sunt dicta, blanditiis unde in fugit autem commodi,
@@ -160,14 +160,14 @@
             </small>
           </div>
         </div>
-        <div class="flex bg-gray-100 round p-4 mb-4">
+        <div id="bordeventanachats" class="flex bg-gray-100 round p-4 mb-4">
           <img src="../imgchat/victor.png" class="rounded-full w-12 mr-4" alt="">
           <div class="w-full overflow-hidden">
             <div class="flex">
-              <p class="name flex-grow">Victor</p>
-              <small class="text-gray-500 mb-1">12:50am</small>
+              <p id="textochatglobo"  class="name flex-grow">Victor</p>
+              <small id="textochatglobo"  class="text-gray-500 mb-1">12:50am</small>
             </div>
-            <small class="overflow-ellipsis overflow-hidden
+            <small id="textochatglobo"  class="overflow-ellipsis overflow-hidden
                         whitespace-nowrap block">Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Minus magnam laudantium nesciunt
               sunt dicta, blanditiis unde in fugit autem commodi,
@@ -176,14 +176,14 @@
             </small>
           </div>
         </div>
-        <div class="flex bg-gray-100 round p-4 mb-4">
+        <div id="bordeventanachats" class="flex bg-gray-100 round p-4 mb-4">
           <img src="../imgchat/fufu.png" class="rounded-full w-12 mr-4" alt="">
           <div class="w-full overflow-hidden">
             <div class="flex">
-              <p class="name flex-grow">Irux</p>
-              <small class="text-gray-500 mb-1">14:22am</small>
+              <p id="textochatglobo"  class="name flex-grow">Irux</p>
+              <small id="textochatglobo"  class="text-gray-500 mb-1">14:22am</small>
             </div>
-            <small class="overflow-ellipsis overflow-hidden
+            <small id="textochatglobo"  class="overflow-ellipsis overflow-hidden
                         whitespace-nowrap block">Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Minus magnam laudantium nesciunt
               sunt dicta, blanditiis unde in fugit autem commodi,
@@ -194,10 +194,13 @@
         </div>
       </div>
     </div>
-    <div class="bg-gray-100 w-9/12">
+
+
+    
+    <div class=" w-9/12">
 
       <!--chats-->
-      <div class="supchat bg-primary px20 py-10 border-b">
+      <div class="supchat px20 py-10 border-b">
         <div class="flex">
           <div class="relative w-12 mb-2 mr-4">
             <img src="../imgchat/elmo.jpg" class="rounded-full" alt="imagen">
@@ -216,16 +219,16 @@
       </div>
 
       <!--mensajes del chat-->
-      <div class="fondo py-6 px-20 overflow-auto h-3/4">
+      <div id="fondochat" class=" py-6 px-20 overflow-auto h-3/4 ">
         <div class="flex mb-12">
           <img src="../imgchat/elmo.jpg" class="self-end rounded-full w-12 mr-4" alt="">
           <div class="flex flex-col">
             <div class="bg-white p-7 w-96 rounded-3xl rounded-bl-none shadow-sm mb-3 ">
-              <p class="name mb-1">Kodwell</p>
-              <small>Lorem ipsum dolor sit amet,
+              <p id="textochatglobo" class="name mb-1">Kodwell</p>
+              <small id="textochatglobo">Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit. Optio expedita laborum!</small>
             </div>
-            <small class="text-gray-500">10:50 am</small>
+            <small id="horachat"class="text-gray-500">10:50 am</small>
           </div>
         </div>
 
@@ -233,11 +236,11 @@
           <img src="../imgchat/fufu.png" class="self-end rounded-full w-12 ml-4" alt="">
           <div class="flex flex-col">
             <div class="bg-blue-100 p-6 w-96 rounded-3xl rounded-br-none shadow-sm mb-2 ">
-              <p class="name mb-1">Irux</p>
-              <small>Lorem ipsum dolor sit amet,
+              <p id="textochatglobo" class="name mb-1">Irux</p>
+              <small id="textochatglobo" >Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit. Optio expedita laborum!</small>
             </div>
-            <small class="text-gray-500 self-end">10:50 am</small>
+            <small id="horachat" class="text-gray-500 self-end">10:50 am</small>
           </div>
         </div>
 
@@ -245,11 +248,11 @@
           <img src="../imgchat/elmo.jpg" class="self-end rounded-full w-12 mr-4" alt="">
           <div class="flex flex-col">
             <div class="bg-white p-6 w-96 rounded-3xl rounded-bl-none shadow-sm mb-2 ">
-              <p class="name mb-1">Kodwell</p>
-              <small>Lorem ipsum dolor sit amet,
+              <p id="textochatglobo" class="name mb-1">Kodwell</p>
+              <small id="textochatglobo">Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit. Optio expedita laborum!</small>
             </div>
-            <small class="text-gray-500">10:50 am</small>
+            <small id="horachat"class="text-gray-500">10:50 am</small>
           </div>
         </div>
 
@@ -257,11 +260,11 @@
           <img src="../imgchat/fufu.png" class="self-end rounded-full w-12 ml-4" alt="">
           <div class="flex flex-col">
             <div class="bg-blue-100 p-6 w-96 rounded-3xl rounded-br-none shadow-sm mb-2 ">
-              <p class="name mb-1">Irux</p>
-              <small>Lorem ipsum dolor sit amet,
+              <p id="textochatglobo" class="name mb-1">Irux</p>
+              <small id="textochatglobo">Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit. Optio expedita laborum!</small>
             </div>
-            <small class="text-gray-500 self-end">10:50 am</small>
+            <small id="horachat" class="text-gray-500 self-end">10:50 am</small>
           </div>
         </div>
 
@@ -269,7 +272,7 @@
 
       <!--barra inferior del chat-->
       <div class="py-6 px-20 flex border-t">
-        <input type="text" class="px-4 py-2 bg-gray-100 w-full focus:outline-none" placeholder="Escribe tu mensaje...">
+        <input id="barerainput" type="text" class="px-4 py-2 w-full focus:outline-none" placeholder="Escribe tu mensaje...">
         <a class="e bg-blue-500 text-white rounded px-4 py-2" href="">Enviar</a>
       </div>
     </div>
