@@ -1,4 +1,3 @@
-/*Marquen sus partes del css*/
 
 /*Jose*/
 body{
@@ -19,12 +18,18 @@ background-color: #1e1d1f;
     border: 1px solid  #780606;
 }
 
+.btn{
+
+    width: 10px;
+
+}
+
 .name{ 
     font-weight: 900;
     color: white;
- }
+}
 
- small{
+small{
     color: white;
 }
 
