@@ -62,7 +62,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: b;
+    align-items: center;
 }
 .imgprofile{
     border-radius: 150px;

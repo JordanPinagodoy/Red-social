@@ -1,17 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!doctype html>
+<html lang="es">
+  <head>
     <title>Perfil</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="../imagenes/logos/LOGO1_2.png">
-    <link rel="stylesheet" href="../css/inicio.css">
-</head>
-<body>
-    <div>
-        <!-- Barra navegación-->
+    <link rel="stylesheet" href="../css/perfil.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="barranav">
+           <!-- Barra navegación-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!--MENU DE SELECCIONES-->
   <div class="collapse" id="navbarToggleExternalContent">
@@ -50,137 +51,95 @@
   </div>
     </div>
     <!--FIN-->
-    <!-- Seccion-->
-    <div class="secciones">
-      <div class="userprofile">
-        <div class="perfiluser text-center">
-          <img class="circular--square" src="../imgchat/elmo.jpg" />
-          <br>
-          <br>
-          <h2 class="text-md-center">Matías Vásquez <cite title="Source Title"> | Kodwell</cite></h2>
-          <br>
-            <!-- Boton de seguir -->
-            <div class="text-center">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-success">Seguir</button>
-                    <button type="button" class="btn btn-light">Mensaje</button>
-                    <button type="button" class="btn btn-danger">Bloquear</button>
-                </div>
-            </div>
-            <br>
-            <br>
-        <div class="text-md-center" class="numeros">
-            <cite title="Source Title"> 15 Siguiendo    |</cite>
-            <cite title="Source Title">     201 Seguidores    |</cite>
-            <cite title="Source Title"> 2 Publicaciones    |</cite>
-            <cite title="Source Title">     305 Me gusta</cite>
-        </div>
-        
-        <div class="descripcion">
-            <br>
-            <p class="text-md-center"><strong>Descripción</strong></p>
-            <p class="text-md-center">Hola, juego Valorant, Fortnite y Csgo. Transmito online y le pongo empeño, sígueme:)</p>
-        <!-- tabla de pruebas mati -->
-        <div class="redes">
-          <br>
-          <table>
-          <thead>
-            <tr>
-              <th class="tg-0pky"><dt><img src="../imagenes/logos/twitch.png" width="30"><a href="https://twitch.tv/kodwell1">  |  Kodwell1</a></dt></th>
-              <th class="tg-0pky"><dt><img src="../imagenes/logos/reddit.png" width="30"><a href="https://www.reddit.com/user/Kodwell">  |  Kodwell1</a></dt></th>
-              <th class="tg-0pky"><dt><img src="../imagenes/logos/trovo.png" width="30"><a href="https://trovo.live/Kodwell">  |  Kodwell</a></dt></th>
-              <td class="tg-0pky"><dt><img src="../imagenes/logos/discord.png" width="30"><a href="https://discord.gg/nxbet6WT">  |  Kodwell's House</a></dt></td>
-              <td class="tg-0pky"><dt><img src="../imagenes/logos/riot.png" width="30"><a href="">  |  Kodwell</a></dt></td>
-              <td class="tg-0pky"><dt><img src="../imagenes/logos/battle.net.png" width="30"><a href="">  |  Kodwell</a></dt></td>
-              <td class="tg-0pky"><dt><img src="../imagenes/logos/epic.png" width="30"><a href="">  |  Kodwell1</a></dt></td>
-            </tr>
-          </thead>
-          </table>
-        </div>
-        
-        <br>
-        <hr style="color: white;">
-        <br>
       </div>
-       <!--Publicacion nueva y botón-->
-          <div id="newpost">                  
-              <div class="poster">
-                  <img  class="imgprofile" src="../imgchat/elmo.jpg" align="left">&nbsp;
-                  <div class="form-group green-border-focus" class="newpost">
-                      <label for="exampleFormControlTextarea5"></label>
-                      <textarea class="form-control" id="exampleFormControlTextarea5" rows="1" placeholder="¿En qué estás pensando?"></textarea>                               
-                  </div>
-              <div class="botoness">
-                  <div id="archivo"class="file-input">
-                      <input type="file" id="file" class="file">
-                      <label for="file">Subir archivo</label>
-                  </div>                      
-                  <div align="right" class="botom">
-                      <button type="submit" class="botonxd">Publicar</button> 
-                  </div>
-              </div>
+      <div class="section">
+        <div class="links">
+            <table>
+                <thead>
+                <tr>
+                    <th>Redes</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a href="https://twitch.tv/kodwell1"><img src="../imagenes/logos/twitch.png" target="_blank" width="30"></a></td>
+                    <td><a href="https://twitch.tv/kodwell1" target="_blank">  |  Kodwell1</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.reddit.com/user/Kodwell"><img src="../imagenes/logos/reddit.png" target="_blank" width="30"></a></td>
+                    <td><a href="https://www.reddit.com/user/Kodwell" target="_blank">  |  Kodwell1</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://trovo.live/Kodwell"><img src="../imagenes/logos/trovo.png" target="_blank" width="30" ></a></td>
+                    <td><a href="https://trovo.live/Kodwell" target="_blank">  |  Kodwell</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://discord.gg/nxbet6WT"><img src="../imagenes/logos/discord.png" target="_blank" width="30"></a></td>
+                    <td><a href="https://discord.gg/nxbet6WT" target="_blank">  |  Kodwell's House</a></td>
+                </tr>
+                <tr>
+                    <td><a href=""><img src="../imagenes/logos/riot.png" target="_blank" width="30"></a></td>
+                    <td><a href="" target="_blank">  |  Kodwell</a></td>
+                </tr>
+                <tr>
+                    <td><a href=""><img src="../imagenes/logos/battle.net.png" target="_blank" width="30"></a></td>
+                    <td><a href="" target="_blank">  |  Kodwell</a></td>
+                </tr>
+                <tr>
+                    <td><a href=""><img src="../imagenes/logos/epic.png" target="_blank" width="30"></a></td>
+                    <td><a href="" target="_blank">  |  Kodwell1</a></td>
+                </tr>
+                <tbody>
+            </table>
+        </div>
+
+        <div class="profileuser">
+            <div class="profileimages">
+                <div><img src="../imagenes/Fondos/dragon3.jpg" class="imageportada" alt="Portada"></div>
+            </div>
+            <div class="username">
+                <div><img src="../imgchat/elmo.jpg" class="imageuser" alt="Perfil"></div>
+                <div align="right" class="botom">
+                    <button type="submit" class="botonxd">Seguir</button> 
+                </div>
+                <h2>Matías Vásquez <cite title="Source Title"> | Kodwell</cite></h2>               
+                <p style="color: rgb(129, 129, 129)"><strong>@Kodwell</p></strong><br><br>
+                <p><strong>Descripción</strong></p>
+                <p>Hola, juego Valorant, Fortnite y Csgo. Transmito online y le pongo empeño, sígueme:)</p>
+            </div>
+            <div  class="estadistics">
+                <cite title="Source Title"> 15 Siguiendo    |</cite>
+                <cite title="Source Title">     201 Seguidores    |</cite>
+                <cite title="Source Title"> 2 Publicaciones    |</cite>
+                <cite title="Source Title">     305 Me gusta</cite>
+            </div>
                   
-              </div>                    
-          </div> 
-        <!---Publicaciones antiguas-->
-        <hr color="red"><br>
-        <div class="posted">
-            <div>
-                <img class="imgprofile" src="../imgchat/elmo.jpg">
-            </div>
-            &nbsp;&nbsp;
-            <div class="nameuser">
-                <cite title="Source Title">Kodwell</cite>
-                <cite title="Source Title" style="color: white; font-size: 12px;" >&nbsp;Hace 30 minutos </cite>
-            </div><br><br>
-            <div class="contentpost">
-                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                    Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor 
-                    (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
-                    los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, 
-                    sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. 
-                    Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, 
-                    y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-                </p>
-                <img class="contentpost" src="../imagenes/Fondos/dragon3.jpg">
-            </div>
-            <div class="reactions">
-                <div class="like">
-                    <button type="submit" class="botonreac">Like</button> 
-                </div>&nbsp;&nbsp;
-                <div class="nolike">
-                    <button type="submit" class="botonreac">Unlike</button> 
-                </div><br>
-            </div>
-             <!--ORDENAR Y CREAR PROPIO MODELO DE COMENTARIO SIGUIENDO LA LOGICA DE COMO FUE CREADO EL POST NUEVO-->
-             <div id="newpost">                  
-              <div class="poster">
-                  <img  class="imgprofile" src="../imgchat/elmo.jpg" align="left">&nbsp;
-                  <div class="form-group green-border-focus" class="newpost">
-                      <label for="exampleFormControlTextarea5"></label>
-                      <textarea class="form-control" id="exampleFormControlTextarea5" rows="1" placeholder="¿En qué estás pensando?"></textarea>                               
-                  </div>
-              <div class="botoness">                      
-                  <div align="right" class="botom">
-                      <button type="submit" class="botonxd">Publicar</button> 
-                  </div>
-              </div>
-                  
-              </div>                    
-          </div>   
-            <!--Cargando-->
-            <div class="cargando">
-              <div class="chaotic-orbit"></div>
-          </div>
-    </div>
+        </div>
+        <div class="newpost">
             
-    
+        </div>
+        <div class="posted">
+
+        </div>
+
+        <div class="suggestions">
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor 
+                (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
+                los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, 
+                sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. 
+                Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, 
+                y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            </p>
+        </div>
         
 
-        <div class="notocar">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-        </div>
-    </body>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
