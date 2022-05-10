@@ -2,18 +2,35 @@
 
 /*Jose*/
 body{
-  background-image: url(../imagenes/Fondos/bk_carru.png);
+background-color: #1e1d1f;
+}
+#cuadroizquierdachats{
+    background-image: url(../imagenes/Fondos/fonizqchat4.png);
 }
 
 #cuadrochatsuno{
     border: 1px solid brown;
     border-radius: 5px;
+
+}
+
+#fondochat{
+    background-image: url(../imagenes/Fondos/bk_carru.png);
+    border: 1px solid  #780606;
 }
 
 .name{ 
     font-weight: 900;
     color: white;
  }
+
+ small{
+    color: white;
+}
+
+#textochatglobo{
+    color: #070707;
+}
 
 .text-2xl{
     font-family: 'Secular One', sans-serif;    /*tipo de fuente para el texto*/
@@ -24,10 +41,13 @@ body{
     color: #1e1d1f;
 }
 
-.barra-superior{
-    background-color: #1e1d1f;
-    height:70px;
-    width: 95%;
+.supchat{
+    border: solid 1px #780606;
+}
+
+#bordeventanachats{
+    border: solid 3px #780606;
+    border-radius: 10px;
 }
 
 .barra{
@@ -59,9 +79,7 @@ a{
     width: 95%;
 }
 
-.supchat{
-    border: solid 1px #0d6efd;
-}
+
 
 .mueve{
     position: relative;
@@ -94,3 +112,30 @@ hr{
     left: 92%;
     width: 120px;
 }
+
+
+
+#barerainput{
+    max-width: 1900px;
+    height: 30px;
+    border: 2px solid transparent;
+    outline: none;
+    border-bottom: 2px solid #3f3f3f;
+    caret-color: #3f3f3f;
+    background-color: #212121;
+    padding: 5px;
+    transition: .5s linear;
+    font-family: monospace;
+    letter-spacing: 1px;
+  }
+  
+#barerainput:focus {
+    border: 2px solid #fa4753;
+    caret-color: #fa4753;
+    color: #fa4753;
+    box-shadow: 4px 4px 10px #070707;
+  }
+  
+#barerainput:focus::placeholder {
+    color: #fa4753;
+  }
