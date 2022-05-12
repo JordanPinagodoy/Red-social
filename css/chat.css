@@ -8,6 +8,11 @@ body{
         background-image: url(../imagenes/Fondos/fonizqchat4.png);
     }
     
+    #ultimochatintento{
+        width: 20px;
+    }
+
+
     #cuadrochatsuno{
         border: 1px solid brown;
         border-radius: 5px;
@@ -21,6 +26,7 @@ body{
     #fondochat{
         background-image: url(../imagenes/Fondos/bk_carru.png);
         border: 1px solid  #780606;
+
     }
     
     .name{ 
@@ -142,4 +148,14 @@ body{
       
     #barerainput:focus::placeholder {
         color: #fa4753;
+      }
+
+
+
+      @media (min-width: 700px) and (orientation: landscape)
+       { 
+
+
+
+
       }

@@ -3,6 +3,38 @@
 body{
 background-color: #1e1d1f;
 }
+
+button{
+    height:90px;
+    width: 450px;
+    border-radius: 10px;
+    border: 2px solid brown;
+    background-color: aqua;
+}
+
+.dentroboton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.bordeboton{
+    border: 2px solid brown;
+}
+
+.fotochatizquierdo{
+    border-radius: 100px;
+    height: 40px;
+}
+
+.textodentrochatizquierdo{
+    font-size: 0.9vw;
+}
+
+
+
 #cuadroizquierdachats{
     background-image: url(../imagenes/Fondos/fonizqchat4.png);
 }
@@ -18,11 +50,6 @@ background-color: #1e1d1f;
     border: 1px solid  #780606;
 }
 
-.btn{
-
-    width: 10px;
-
-}
 
 .name{ 
     font-weight: 900;
@@ -144,3 +171,9 @@ hr{
 #barerainput:focus::placeholder {
     color: #fa4753;
   }
+
+  @media (min-width: 700px) and (orientation: landscape) { 
+
+
+
+   }
