@@ -2,25 +2,16 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/chat.css">
-  <link rel="icon" href="../imagenes/logos/LOGO1_2.png">
-  <title>Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/chat.css">
 </head>
 
 <body>
 
-  <!--MENU DE SELECCIONES-->
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -36,6 +27,7 @@
               data-bs-toggle="dropdown" aria-expanded="false">
               Más opciones
             </a>
+            
             <!--RELLENAR CON BOTONES EXTRAS -->
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
               <li><a class="dropdown-item" href="../Inicio/inicio.html">Inicio</a></li>
@@ -45,246 +37,255 @@
             </ul>
           </li>
         </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link " href="../apirest/api.html">Consulta precio de RP</a></li>
+        </ul>
       </div>
     </div>
   </nav>
 
 
+    <div class="padrepadre">
+        <div class="padre">
+            <!--lado izquierdo-->
+            <div class="iz">
 
-  <!--Area de mensajes-->
+                <div class="tcontactos">
+                    <h3>Tus contactos</h3>
+                </div>
 
-  <section class="h-screen flex overflow-hidden">
-    <div id="cuadroizquierdachats" class=" w-3/12 p-6">
-
-      <h3 class="text-2xl mb-8">Chat en linea</h3>
-
-      <!--seccion de chat-->
-      <div id="cuadrochatsuno" class="flex overflow-auto w-full mb-8 ">
-        <!--Chat mati-->
-        <div class="self-center text-center mr-4"></div>
-        <div>
-          <div class="relative w-12 mb-2">
-            <img src="../imgchat/elmo.jpg" class="rounded-full" alt="imagen">
-            <div class="absolute bg-green-300 p-1 rounded-full bottom-0 right-0 border-gray-800 border-2">
+                <div class="container c1">
+                    <div class="container container-fluid cajabotones">
+                        <div>
+                            <button class="btn botonchat" id="boton1">
+                                <img src="../imagenes/perfiles/JoseLechuga.jpg" alt="jose" class="imgbtnchat">
+                                <p class="text-md-start"><b>Jose Lechuga</b> <br> Start aligned text on viewports sized MD (medium) or wider.</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn botonchat" id="boton2">
+                                <img src="../imagenes/perfiles/JuanTopo.png" alt="jose" class="imgbtnchat">
+                                <p class="text-md-start"><b>Jordan Iruxx</b> <br>Start aligned text on viewports sized MD (medium) or wider.</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn botonchat" id="boton3">
+                                <img src="../imagenes/perfiles/juanin.jpg" alt="jose" class="imgbtnchat">
+                                <p class="text-md-start"><b>Matias Kodwell</b> <br>Start aligned text on viewports sized MD (medium) or wider.</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn botonchat" id="boton4">
+                                <img src="../imagenes/perfiles/diego.jpg" alt="jose" class="imgbtnchat">
+                                <p class="text-md-start"><b>Diego GUARDIA_SNIPER</b> <br>Start aligned text on viewports sized MD (medium) or wider.</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn botonchat" id="boton5">
+                                <img src="../imgchat/victor.png" alt="jose" class="imgbtnchat">
+                                <p class="text-md-start"><b>Choche007</b> <br>Start aligned text on viewports sized MD (medium) or wider.</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn botonchat" id="boton6">
+                                <img src="../imgchat/rodri.png" alt="jose" class="imgbtnchat">
+                                <p class="text-md-start"><b>El canaleta</b> <br>Start aligned text on viewports sized MD (medium) or wider.</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <small class="name">Kodwell</small>
+
+
+            <!--lado derecho-->
+            <div class="der">
+                <div class="contactochat">
+
+                    <div class="persona1" id="persona">
+                        <div class="nmbr_contacto_estado">
+                            <div class="nmbrcontactopersonachat">
+                                <h3>CHAT ONLINE</h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="persona1" id="persona1">
+                        <div class="imagendecontactochat">
+                            <img src="../imagenes/perfiles/JoseLechuga.jpg" alt="" class="imagencontactosuperior">
+                        </div>
+
+                        <div class="nmbr_contacto_estado">
+                            <div class="nmbrcontactopersonachat">
+                                <h3>Jose Lechuga</h3>
+                            </div>
+                            <span class="estado">◉</span>
+                            <span class="lin">En linea</span>
+                        </div>
+                    </div>
+
+                    <div class="persona2" id="persona2">
+                        <div class="imagendecontactochat">
+                            <img src="../imagenes/perfiles/JuanTopo.png" alt="" class="imagencontactosuperior">
+                        </div>
+
+                        <div class="nmbr_contacto_estado">
+                            <div class="nmbrcontactopersonachat">
+                                <h3>Jordan Iruxx </h3>
+                            </div>
+                            <span class="estado">◉</span>
+                            <span class="lin">En linea</span>
+                        </div>
+                    </div>
+
+                    <!--div caja de los chat-->
+                    <div class="cajachat">
+                        <!--div con imagen sin chat seleccionado-->
+                        <div class="container fotosinchat" align="center" id="fotosinchat">
+                            <img src="../imagenes/Fondos/fondo_sin_chat.png" alt="" class="fotosinchat" id="fotosinchat">
+                        </div>
+
+                        <div class="" id="chatuno_1">
+                            <!--chat izquierdo-->
+                            <div class="p-4 primertextochat">
+                                <img src="../imagenes/perfiles/JoseLechuga.jpg" alt="" class="imagencontactosuperior">
+                                <div class="texto">
+                                    <p class="text-md-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                                    </p>
+                                </div>
+                            </div>
+                            <!--chat derecho-->
+                            <div class="p-4 segundotextochat">
+                                <div class="texto2">
+                                    <p class="text-md-center">
+                                        No parlo takataka
+                                    </p>
+                                </div>
+                                <img src="../imgchat/elmo.jpg" alt="" class="imagencontactosuperior">
+                            </div>
+                            <!--chat izquierdo-->
+                            <div class="p-4 primertextochat">
+                                <img src="../imagenes/perfiles/JoseLechuga.jpg" alt="" class="imagencontactosuperior">
+                                <div class="texto">
+                                    <p class="text-md-center">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe hic illum, odit dolore harum ....... lorem lorem 
+                                    </p>
+                                </div>
+                            </div>
+                            <!--chat derecho-->
+                            <div class="p-4 segundotextochat">
+                                <div class="texto2">
+                                    <p class="text-md-center">
+                                        KHA!? <br>
+                                        hablame bien !! WHAT DICEEEE!?
+                                    </p>
+                                </div>
+                                <img src="../imgchat/elmo.jpg" alt="" class="imagencontactosuperior">
+                            </div>
+                            <!--chat izquierdo-->
+                            <div class="p-4 primertextochat">
+                                <img src="../imagenes/perfiles/JoseLechuga.jpg" alt="" class="imagencontactosuperior">
+                                <div class="texto">
+                                    <p class="text-md-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                                    </p>
+                                </div>
+                            </div>
+                            <!--chat derecho-->
+                            <div class="p-4 segundotextochat">
+                                <div class="texto2">
+                                    <p class="text-md-center">
+                                        .... <br>
+                                        AMENO (?
+                                    </p>
+                                </div>
+                                <img src="../imgchat/elmo.jpg" alt="" class="imagencontactosuperior">
+                            </div>
+
+                        </div>
+
+
+                        <!--SEGUNDA OPCION DE CHATS AL PRIMIR BOTON-->
+                        <div class="" id="chatdos_2">
+                            <!--chat izquierdo-->
+                            <div class="p-4 primertextochat">
+                                <img src="../imagenes/perfiles/JuanTopo.png" alt="" class="imagencontactosuperior">
+                                <div class="texto">
+                                    <p class="text-md-center">
+                                        Baila morena, baila morena <br>
+                                        💃🕺
+                                    </p>
+                                </div>
+                            </div>
+                            <!--chat derecho-->
+                            <div class="p-4 segundotextochat">
+                                <div class="texto2">
+                                    <p class="text-md-center">
+                                        Perreo pa' los nenes, perreo pa' las nenas
+                                    </p>
+                                </div>
+                                <img src="../imgchat/elmo.jpg" alt="" class="imagencontactosuperior">
+                            </div>
+                            <!--chat izquierdo-->
+                            <div class="p-4 primertextochat">
+                                <img src="../imagenes/perfiles/JuanTopo.png" alt="" class="imagencontactosuperior">
+                                <div class="texto">
+                                    <p class="text-md-center">
+                                        BAILA MORENA<br>
+                                        BAILA MORENA<br>
+                                        !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                    </p>
+                                </div>
+                            </div>
+                            <!--chat derecho-->
+                            <div class="p-4 segundotextochat">
+                                <div class="texto2">
+                                    <p class="text-md-center">
+                                        Dale moreno.que nos fuimos a fuegoteeeeeeeeee 🎶🎶🎶
+                                    </p>
+                                </div>
+                                <img src="../imgchat/elmo.jpg" alt="" class="imagencontactosuperior">
+                            </div>
+                            <!--chat izquierdo-->
+                            <div class="p-4 primertextochat">
+                                <img src="../imagenes/perfiles/JuanTopo.png" alt="" class="imagencontactosuperior">
+                                <div class="texto">
+                                    <p class="text-md-center">
+                                        Temon😎 
+                                        Luney tunes y Noriega , su clasico aksjasdasdjka 
+                                    </p>
+                                </div>
+                            </div>
+                            <!--chat derecho-->
+                            <div class="p-4 segundotextochat">
+                                <div class="texto2">
+                                    <p class="text-md-center">
+                                        Mejor papi Chayanne... 
+                                        TU PIRATA SOY YOOOOOOOOOOO!!!!!!! <br>
+                                        yo la amaba :'v
+                                    </p>
+                                </div>
+                                <img src="../imgchat/elmo.jpg" alt="" class="imagencontactosuperior">
+                            </div>
+
+                            
+                        </div>
+
+                        <!--div input-->
+                        <div class="p-2 cajadeenvio">
+                            <input type="text" class="input" placeholder="Escribe tu mensaje aqui">
+                            <button class="btn botondeenvio">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
-        <!--Chat jordan-->
-        <div class="self-center text-center mr-4"></div>
-        <div>
-          <div class="relative w-12 mb-2">
-            <img src="../imgchat/fufu.png" class="rounded-full" alt="imagen">
-            <div class="absolute bg-green-300 p-1 rounded-full bottom-0 right-0 border-gray-800 border-2">
-            </div>
-          </div>
-          <small class="name">Irux</small>
-        </div>
-        <!--chat jose-->
-        <div class="self-center text-center mr-4"></div>
-        <div>
-          <div class="relative w-12 mb-2">
-            <img src="../imgchat/stitch.png" class="rounded-full" alt="imagen">
-            <div class="absolute bg-red-300 p-1 rounded-full bottom-0 right-0 border-gray-800 border-2">
-            </div>
-          </div>
-          <small class="name">Uncleplayer</small>
-        </div>
-
-        <!--chat rodrigo-->
-        <div class="self-center text-center mr-4"></div>
-        <div>
-          <div class="relative w-12 mb-2">
-            <img src="../imgchat/rodri.png" class="rounded-full" alt="imagen">
-            <div class="absolute bg-green-300 p-1 rounded-full bottom-0 right-0 border-gray-800 border-2">
-            </div>
-          </div>
-          <small class="name">Rodrigo</small>
-        </div>
-
-        <!--chat victor-->
-        <div class="self-center text-center mr-4"></div>
-        <div>
-          <div class="relative w-12 mb-2">
-            <img src="../imgchat/victor.png" class="rounded-full" alt="imagen">
-            <div class="absolute bg-green-300 p-1 rounded-full bottom-0 right-0 border-gray-800 border-2">
-            </div>
-          </div>
-          <small class="name">Victor</small>
-        </div>
-
-        <!--chat samuel-->
-        <div class="self-center text-center mr-4"></div>
-        <div>
-          <div class="relative w-12 mb-2">
-            <img src="../imgchat/samuel.png" class="rounded-full" alt="imagen">
-            <div class="absolute bg-red-300 p-1 rounded-full bottom-0 right-0 border-gray-800 border-2">
-            </div>
-          </div>
-          <small class="name">Samuel</small>
-        </div>
-      </div>
-
-      <!--vista de chats-->
-      <div class="overflow-auto h-4/5">
-        <div id="bordeventanachats" class="flex bg-gray-100 round p-4 mb-4">
-          <img src="../imgchat/elmo.jpg" class="rounded-full w-12 mr-4" alt="">
-          <div class="w-full overflow-hidden">
-            <div class="flex">
-              <p id="textochatglobo" class="name flex-grow">Kodwell</p>
-              <small class="text-gray-500 mb-1">10:50am</small>
-            </div>
-            <small id="textochatglobo"  class="overflow-ellipsis overflow-hidden
-                        whitespace-nowrap block">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Minus magnam laudantium nesciunt
-              sunt dicta, blanditiis unde in fugit autem commodi,
-              vitae quidem quisquam aut tempore ut nihil nulla
-              reprehenderit dolorem.
-            </small>
-          </div>
-        </div>
-        <div id="bordeventanachats" class="flex bg-gray-100 round p-4 mb-4">
-          <img src="../imgchat/stitch.png" class="rounded-full w-12 mr-4" alt="">
-          <div class="w-full overflow-hidden">
-            <div class="flex">
-              <p id="textochatglobo"  class="name flex-grow">Uncleplayer</p>
-              <small id="textochatglobo"  class="text-gray-500 mb-1">8:20am</small>
-            </div>
-            <small id="textochatglobo"  class="overflow-ellipsis overflow-hidden
-                        whitespace-nowrap block">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Minus magnam laudantium nesciunt
-              sunt dicta, blanditiis unde in fugit autem commodi,
-              vitae quidem quisquam aut tempore ut nihil nulla
-              reprehenderit dolorem.
-            </small>
-          </div>
-        </div>
-        <div id="bordeventanachats" class="flex bg-gray-100 round p-4 mb-4">
-          <img src="../imgchat/victor.png" class="rounded-full w-12 mr-4" alt="">
-          <div class="w-full overflow-hidden">
-            <div class="flex">
-              <p id="textochatglobo"  class="name flex-grow">Victor</p>
-              <small id="textochatglobo"  class="text-gray-500 mb-1">12:50am</small>
-            </div>
-            <small id="textochatglobo"  class="overflow-ellipsis overflow-hidden
-                        whitespace-nowrap block">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Minus magnam laudantium nesciunt
-              sunt dicta, blanditiis unde in fugit autem commodi,
-              vitae quidem quisquam aut tempore ut nihil nulla
-              reprehenderit dolorem.
-            </small>
-          </div>
-        </div>
-        <div id="bordeventanachats" class="flex bg-gray-100 round p-4 mb-4">
-          <img src="../imgchat/fufu.png" class="rounded-full w-12 mr-4" alt="">
-          <div class="w-full overflow-hidden">
-            <div class="flex">
-              <p id="textochatglobo"  class="name flex-grow">Irux</p>
-              <small id="textochatglobo"  class="text-gray-500 mb-1">14:22am</small>
-            </div>
-            <small id="textochatglobo"  class="overflow-ellipsis overflow-hidden
-                        whitespace-nowrap block">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Minus magnam laudantium nesciunt
-              sunt dicta, blanditiis unde in fugit autem commodi,
-              vitae quidem quisquam aut tempore ut nihil nulla
-              reprehenderit dolorem.
-            </small>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    
-    <div class=" w-9/12">
-
-      <!--chats-->
-      <div class="supchat px20 py-10 border-b">
-        <div class="flex">
-          <div class="relative w-12 mb-2 mr-4">
-            <img src="../imgchat/elmo.jpg" class="rounded-full" alt="imagen">
-            <div class="absolute bg-green-300 p-1 rounded-full bottom-0 right-0 border-gray-800 border-2">
-            </div>
-          </div>
-          <div>
-            <p class="name">Kodwell</p>
-            <small>En linea</small>
-
-          </div>
-        </div>
-        <div>
-
-        </div>
-      </div>
-
-      <!--mensajes del chat-->
-     <div class="container">
-       <div class="row">
-        <div id="fondochat" class=" ">
-          <div class="flex mb-12">
-            <img src="../imgchat/elmo.jpg" class="self-end rounded-full w-12 mr-4" alt="">
-            <div class="flex flex-col">
-              <div class="bg-white p-7 w-96 rounded-3xl rounded-bl-none shadow-sm mb-3 ">
-                <p id="textochatglobo" class="name mb-1">Kodwell</p>
-                <small id="textochatglobo">Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit. Optio expedita laborum!</small>
-              </div>
-              <small id="horachat"class="text-gray-500">10:50 am</small>
-            </div>
-          </div>
-  
-          <div class="flex mb-12 flex-row-reverse">
-            <img src="../imgchat/fufu.png" class="self-end rounded-full w-12 ml-4" alt="">
-            <div class="flex flex-col">
-              <div class="bg-blue-100 p-6 w-96 rounded-3xl rounded-br-none shadow-sm mb-2 ">
-                <p id="textochatglobo" class="name mb-1">Irux</p>
-                <small id="textochatglobo" >Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit. Optio expedita laborum!</small>
-              </div>
-              <small id="horachat" class="text-gray-500 self-end">10:50 am</small>
-            </div>
-          </div>
-  
-          <div class="flex mb-12">
-            <img src="../imgchat/elmo.jpg" class="self-end rounded-full w-12 mr-4" alt="">
-            <div class="flex flex-col">
-              <div class="bg-white p-6 w-96 rounded-3xl rounded-bl-none shadow-sm mb-2 ">
-                <p id="textochatglobo" class="name mb-1">Kodwell</p>
-                <small id="textochatglobo">Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit. Optio expedita laborum!</small>
-              </div>
-              <small id="horachat"class="text-gray-500">10:50 am</small>
-            </div>
-          </div>
-  
-          <div class="flex mb-12 flex-row-reverse">
-            <img src="../imgchat/fufu.png" class="self-end rounded-full w-12 ml-4" alt="">
-            <div class="flex flex-col">
-              <div class="bg-blue-100 p-6 w-96 rounded-3xl rounded-br-none shadow-sm mb-2 ">
-                <p id="textochatglobo" class="name mb-1">Irux</p>
-                <small id="textochatglobo">Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit. Optio expedita laborum!</small>
-              </div>
-              <small id="horachat" class="text-gray-500 self-end">10:50 am</small>
-            </div>
-          </div>
-  
-        </div>
-       </div>
-     </div>
-
-      <!--barra inferior del chat-->
-      <div class="py-6 px-20 flex border-t">
-        <input id="barerainput" type="text" class="px-4 py-2 w-full focus:outline-none" placeholder="Escribe tu mensaje...">
-        <a class="e bg-blue-500 text-white rounded px-4 py-2" href="">Enviar</a>
-      </div>
-    </div>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+        <script src="../java/chat.js"></script>
