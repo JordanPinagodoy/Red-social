@@ -306,7 +306,7 @@ body{
     }
 }
 
-@media(max-width:500px){
+@media(max-width:200px){
     body{
         background-image: url(../imagenes/Fondos/hola2.jpg);
     }
